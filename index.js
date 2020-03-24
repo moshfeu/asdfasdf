@@ -126,16 +126,16 @@ class WixDefaultCustomElement extends HTMLElement {
 
   connectedCallback() {
     document.head.appendChild(createHostStyle());
-    this.appendChild(createStyle());
-    this.appendChild(createImageContainer());
-    this.appendChild(createTextContainer());
+//     this.appendChild(createStyle());
+//     this.appendChild(createImageContainer());
+//     this.appendChild(createTextContainer());
   }
 }
 
 customElements.define("wix-default-custom-element", WixDefaultCustomElement);
 
-document.querySelector("button").addEventListener("click", () => {
-  const htmlTag = document.querySelector("html");
-  const nextLang = htmlTag.getAttribute("lang") === "he" ? "en" : "he";
-  htmlTag.setAttribute("lang", nextLang);
-});
+// document.querySelector("button").addEventListener("click", () => {
+//   const htmlTag = document.querySelector("html");
+//   const nextLang = htmlTag.getAttribute("lang") === "he" ? "en" : "he";
+//   htmlTag.setAttribute("lang", nextLang);
+// });
