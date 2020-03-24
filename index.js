@@ -107,10 +107,6 @@ const createStyle = () => {
 const createHostStyle = () => {
   const style = document.createElement("style");
   style.textContent = `
-    body {
-      background: red;
-    }
-
     html[lang=he] nav > ul {
       direction: rtl;
     }
